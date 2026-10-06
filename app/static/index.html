@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VaultDesk Demo</title>
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <header><div class="brand"><span>VD</span><div><strong>VaultDesk</strong><small>Controlled document library</small></div></div><div class="session"><span>Synthetic files only</span><label>Demo role<select id="role"><option>viewer</option><option>editor</option><option selected>admin</option></select></label></div></header>
+  <div class="layout">
+    <aside><nav><button class="active">Documents</button><button>Activity</button><button>Access policy</button></nav><div class="storage"><small>LOCAL STORAGE</small><strong>3 protected files</strong><span><i></i>Healthy</span></div></aside>
+    <main>
+      <div class="title"><div><p>LIBRARY / DOCUMENTS</p><h1>Document library</h1><span>Review, download and recover controlled files.</span></div><button id="refresh">Refresh</button></div>
+      <section class="summary"><div><span>Active documents</span><strong id="active-count">-</strong></div><div><span>Categories</span><strong id="category-count">-</strong></div><div><span>Stored data</span><strong id="storage-size">-</strong></div><div><span>Protection</span><strong class="secure">Enabled</strong></div></section>
+      <div class="toolbar"><div class="tabs"><button class="active" data-status="active">Active</button><button data-status="deleted">Recycle bin</button></div><input id="search" type="search" placeholder="Search title, category or filename"></div>
+      <section class="document-table"><table><thead><tr><th>Document</th><th>Category</th><th>Size</th><th>Uploaded</th><th>Status</th><th></th></tr></thead><tbody id="documents"></tbody></table><div id="empty" hidden>No documents match this view.</div></section>
+      <section class="security-note"><strong>Security controls demonstrated</strong><span>Role checks, PDF validation, path containment, soft delete, recovery, audit events, rate limiting and browser security headers.</span></section>
+    </main>
+  </div>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>
