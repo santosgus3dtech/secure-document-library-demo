@@ -1,5 +1,7 @@
 # Secure Document Library Demo
 
+🇧🇷 [Leia este README em Português (Brasil)](README.pt-BR.md).
+
 A sanitized FastAPI document portal that demonstrates access control and defensive file handling with generated PDFs.
 
 ![Secure document library dashboard](docs/screenshots/library.png)
